@@ -1,6 +1,6 @@
 # About Me
 
-## Abdu Mohamed Abdu
+## **Abdu Mohamed Abdu**
 
 I am a Mechanical Engineering student at the University of North Carolina at Charlotte with a previous background in Computer Science. I became interested in mechanical engineering because I wanted to expand beyond software and better understand how physical systems are designed, manufactured and controlled. I enjoy seeing how calculations and models connect to actual components and machines, especially when a design moves from a computer model to something that can be built and tested.
 
