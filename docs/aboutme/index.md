@@ -1,6 +1,6 @@
-#About Me
+# About Me
 
-##Abdu Mohamed Abdu
+## Abdu Mohamed Abdu
 
 I am a Mechanical Engineering student at the University of North Carolina at Charlotte with a previous background in Computer Science. I became interested in mechanical engineering because I wanted to expand beyond software and better understand how physical systems are designed, manufactured and controlled. I enjoy seeing how calculations and models connect to actual components and machines, especially when a design moves from a computer model to something that can be built and tested.
 
@@ -10,10 +10,10 @@ As I continue through the mechanical engineering program, I want to become an en
 
 Long term, I am interested in areas such as dynamics and controls, automation, mechatronics and intelligent mechanical systems. I want to develop the ability to analyze a problem, compare possible solutions, build or model a solution and explain why the final design was selected. My goal is to combine my computing background with mechanical engineering to work on systems that involve both physical hardware and computation.
 
-###Defending an Engineering Decision
+### Defending an Engineering Decision
 
 To me, defending an engineering decision means being able to explain why a specific choice was made using requirements, calculations, assumptions, testing or comparison with other alternatives instead of simply relying on personal preference. I understand this idea at a basic level, but I am still learning how to apply it consistently and document my reasoning so that another engineer could follow the same process. I expect this course to help me improve that skill as the design problems become more complex.
 
-###Time Spent
+### Time Spent
 
 Approximately 4.5 - 5 hours were spent completing Assignment 1.
