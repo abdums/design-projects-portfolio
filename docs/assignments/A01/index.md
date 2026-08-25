@@ -83,3 +83,8 @@ For each design project, I will document the analysis, assumptions, design decis
 
 ## Communicate
 
+See About Me page.
+
+### Time Spent
+
+Approximately 4.5 - 5 hours were spent completing Assignment 1.
