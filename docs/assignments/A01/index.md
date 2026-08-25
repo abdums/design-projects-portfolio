@@ -1,4 +1,4 @@
-# A1 – [Create Portfolio]
+# A1 – Create Portfolio
 
 ## Objective
 The objective of this assignment is to create a professional engineering portfolio and establish a consistent method for documenting design work. The portfolio will demonstrate engineering analysis, decision-making and communication throughout the semester.
@@ -26,6 +26,39 @@ The objective of this assignment is to create a professional engineering portfol
 3- Evidence of Reasoning: The portfolio shows design objectives and results. While the capstone documentation provides stronger evidence through requirements, calculations, testing and validation.
 
 4- Professional Tone: The language is primarily technical and project-focused, allowing an engineering employer to quickly identify the purpose and outcome of each project.
+
+
+**Task B: Product Analysis**
+
+### Paper Clip
+
+Primary Function:
+The primary function of a paper clip is to temporarily secure multiple sheets of paper together. Mechanically, it does this by applying a clamping force to the sheets through the elastic deformation of a bent piece of wire. Unlike a staple, the paper clip can hold the sheets together without permanently changing or puncturing them.
+
+Governing Model
+The paper clip can be approximated as a spring using:
+
+F=kσ
+Where:
+*F= force produced by the paper clip
+*k= effective stiffness of the bent wire
+*σ= displacement of the wire when paper is inserted
+
+When paper is pushed between the sections of wire, the wire is displaced from its original position. The stiffness of the wire causes it to push back toward its original shape, producing the clamping force that holds the sheets together.
+
+One assumption of this model is that the paper clip remains within its elastic range. This means that after the paper is removed, the clip returns approximately to its original shape instead of remaining permanently bent.
+
+Patent Research
+A historical patent related to the paper clip is US636272A, granted to William D. Middlebrook in 1899. The patent is titled Machine for Making Wire Paper-Clips. It describes a machine that feeds, cuts, and bends a single piece of wire into the shape of a paper clip. The patent shows the wire being bent so that the straight portions become parallel to each other.
+
+Two alternative devices that perform the same general function are:
+*Staple: holds sheets together by piercing the paper and permanently bending metal around the sheets.
+*Binder clip: uses spring-loaded metal jaws to create a larger clamping force around a stack of paper.
+
+Design Decision
+
+One important design decision is making the paper clip from one continuous piece of wire with several parallel sections and rounded bends. The bends allow the wire to flex when paper is inserted while the parallel sections provide multiple contact areas against the paper. Using a single piece of wire also eliminates the need for additional fasteners or moving components. The design therefore achieves its clamping function with a very small number of parts.
+
 
 ## Decide
 
