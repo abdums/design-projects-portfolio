@@ -83,7 +83,7 @@ For each design project, I will document the analysis, assumptions, design decis
 
 ## Communicate
 
-See About Me page.
+See [About Me](../../aboutme/index.md) page.
 
 ### Time Spent
 
