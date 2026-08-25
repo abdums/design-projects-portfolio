@@ -48,10 +48,10 @@ When paper is pushed between the sections of wire, the wire is displaced from it
 
 One assumption of this model is that the paper clip remains within its elastic range. This means that after the paper is removed, the clip returns approximately to its original shape instead of remaining permanently bent.
 
-<img width="500" alt="Paper clip geometry" src="https://github.com/user-attachments/assets/06ed74c6-a350-49e7-bbc0-ebfc7b646f09" />
+<img width="500" style="display: block;" alt="Paper clip geometry" src="https://github.com/user-attachments/assets/06ed74c6-a350-49e7-bbc0-ebfc7b646f09" />
 *Figure 1. Paper clip geometry.* The paper clip consists of one continuous wire formed into rounded bends and overlapping straight sections. The rounded bends allow the wire to elastically flex, while the overlapping sections provide opposing contact surfaces that clamp the paper.
 
-<img width="500" alt="Paper clip holding paper" src="https://github.com/user-attachments/assets/50f5d612-b8fc-4acc-a088-a262c2ea6237" />
+<img width="500" style="display: block;" alt="Paper clip holding paper" src="https://github.com/user-attachments/assets/50f5d612-b8fc-4acc-a088-a262c2ea6237" />
 *Figure 2. Paper clip under load.* Inserting paper separates the overlapping wire sections and elastically deforms the clip. The curved sections flex as the gap increases, producing a restoring force that presses the straight sections against the paper.
 
 #### Patent Research
