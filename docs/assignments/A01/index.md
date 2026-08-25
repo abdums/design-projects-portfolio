@@ -48,9 +48,15 @@ When paper is pushed between the sections of wire, the wire is displaced from it
 
 One assumption of this model is that the paper clip remains within its elastic range. This means that after the paper is removed, the clip returns approximately to its original shape instead of remaining permanently bent.
 
+<img width="500" alt="Paper clip geometry" src="https://github.com/user-attachments/assets/06ed74c6-a350-49e7-bbc0-ebfc7b646f09" />
+*Figure 1. Paper clip geometry.* The paper clip consists of one continuous wire formed into rounded bends and overlapping straight sections. The rounded bends allow the wire to elastically flex, while the overlapping sections provide opposing contact surfaces that clamp the paper.
+
+<img width="500" alt="Paper clip holding paper" src="https://github.com/user-attachments/assets/50f5d612-b8fc-4acc-a088-a262c2ea6237" />
+*Figure 2. Paper clip under load.* Inserting paper separates the overlapping wire sections and elastically deforms the clip. The curved sections flex as the gap increases, producing a restoring force that presses the straight sections against the paper.
+
 #### Patent Research
 
-A historical patent related to the paper clip is US636272A, granted to William D. Middlebrook in 1899. The patent is titled Machine for Making Wire Paper-Clips. It describes a machine that feeds, cuts and bends a single piece of wire into the shape of a paper clip. The patent shows the wire being bent so that the straight portions become parallel to each other.
+A historical patent related to the paper clip is US636272A, granted to William D. Middlebrook in 1899. The patent is titled **Machine for Making Wire Paper-Clips**. It describes a machine that feeds, cuts and bends a single piece of wire into the shape of a paper clip. The patent shows the wire being bent so that the straight portions become parallel to each other.
 
 Two alternative devices that perform the same general function are:
 
@@ -60,12 +66,6 @@ Two alternative devices that perform the same general function are:
 #### Design Decision
 
 One important design decision is making the paper clip from one continuous piece of wire with several parallel sections and rounded bends. The bends allow the wire to flex when paper is inserted while the parallel sections provide multiple contact areas against the paper. Using a single piece of wire also eliminates the need for additional fasteners or moving components. The design therefore achieves its clamping function with a very small number of parts.
-
-<img width="3024" height="4032" alt="Close up clip" src="https://github.com/user-attachments/assets/06ed74c6-a350-49e7-bbc0-ebfc7b646f09" />
-The paper clip is made from one continuous piece of wire formed into rounded bends and parallel straight sections. The rounded bends allow the wire to flex when sheets are inserted, while the overlapping straight sections contact both sides of the paper and produce the clamping action. The long sections of wire provide enough flexibility for the clip to open without permanently deforming during normal use.
-
-<img width="3024" height="4032" alt="Paper clipped" src="https://github.com/user-attachments/assets/50f5d612-b8fc-4acc-a088-a262c2ea6237" />
-Inserting the paper separates the overlapping wire sections and elastically deforms the clip. The wire attempts to return to its original shape, creating a clamping force on the sheets.
 
 ## Decide
 
