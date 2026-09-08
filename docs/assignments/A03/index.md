@@ -146,7 +146,7 @@ Total time from start to finish:
 
 ### CAD File
 
-[Download A3 SolidWorks CAD File](files/beam.zip)
+[Download A3 SolidWorks CAD File](./files/beam.zip)
 
 ### References
 
