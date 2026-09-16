@@ -208,7 +208,7 @@ The main lessons learned were:
 - How parametric modeling makes a design easier to modify
 - How an engineering drawing communicates the final design for manufacturing
 
-**Total Time:** 7
+**Total Time:** 7 Hours
 
 ---
 
