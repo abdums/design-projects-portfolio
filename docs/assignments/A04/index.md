@@ -214,7 +214,8 @@ The main lessons learned were:
 
 # 9. Files
 
-[Download Motor Mount CAD Files](files/A4_Motor_Mount.zip)
+[Download Motor Mount CAD Files]
+
 
 [Download Engineering Drawing](files/A4_DRAWING.pdf)
 
