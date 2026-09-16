@@ -1,3 +1,4 @@
+
 # A4 – Motor Mount
 
 ## Design Objective
@@ -214,10 +215,12 @@ The main lessons learned were:
 
 # 9. Files
 
-[Download Motor Mount CAD Files]
+[Download Motor Mount CAD Files][A4.zip](https://github.com/user-attachments/files/32308227/A4.zip)
 
 
-[Download Engineering Drawing](files/A4_DRAWING.pdf)
+
+[Download Engineering Drawing][A4 DRAWING.pdf](https://github.com/user-attachments/files/32308296/A4.DRAWING.pdf)
+
 
 ---
 
