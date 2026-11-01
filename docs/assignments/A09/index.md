@@ -157,7 +157,7 @@ Using **Cut-Revolve**, I revolved the profile through 360 degrees to remove mate
 </figure>
 
 <figure>
-  <img src="images/Pulley_extruded.png" alt="Completed grooved pulley with the central shaft hole" width="650">
+  <img src="images/belt_groove_cut.png" alt="Completed grooved pulley with the central shaft hole" width="650">
   <figcaption>Figure 13. Completed pulley with a centered circumferential round-belt groove.</figcaption>
 </figure>
 
