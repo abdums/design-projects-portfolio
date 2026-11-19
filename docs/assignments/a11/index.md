@@ -2,11 +2,11 @@
 
 ## Project Overview
 
-This assignment continues our A10 dual-lead-screw tensile tester design. The tester uses two 1/2"-10 Acme lead screws to move the crosshead while supporting a maximum tensile load of **2,000 N**. For A11, we focused on selecting the motors, designing their mounting brackets, connecting the motors to the lead screws, reinforcing the T-slot frame, and adding lower floating bearing supports.
+This assignment continues our A10 dual-lead-screw tensile tester design. The tester uses two 1/2"-10 Acme lead screws to move the crosshead while supporting a maximum tensile load of **2,000 N**. For A11, we focused on selecting the motors, designing their mounting brackets, connecting the motors to the lead screws, reinforcing the T-slot frame and adding lower floating bearing supports.
 
-The crosshead must move at **1–50 mm/min**, and the assignment calls for a **factor of safety of 4**. We used our A10 lead-screw calculations as a starting point and continued developing the SolidWorks assembly using a combination of purchased components and custom parts.
+The crosshead must move at **1–50 mm/min** and the assignment calls for a **factor of safety of 4**. We used our A10 lead-screw calculations as a starting point and continued developing the SolidWorks assembly using a combination of purchased components and custom parts.
 
-This report brings together Abdu's component selections, calculations, and CAD design with Jed's structural FEA, engineering drawings, and final assembly development. Each major section identifies the responsible team member.
+This is our **working team portfolio**. Abdu's calculations and CAD contributions are included below; Jed's structural FEA, engineering drawings and final cost data will be added when complete. Each section is labeled with the responsible team member.
 
 ## 1. Motor Selection — Abdu Mohamed Abdu
 
@@ -23,11 +23,13 @@ The motor must provide sufficient torque across this low-speed range. The calcul
 
 <img src="images/1.png" alt="Motor selection requirements and handwritten speed/torque calculations." style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
+Motor Selection Calculation
+
 ### 1.2 Selected Motor and Gearhead
 
-We selected **two Oriental Motor BLV R Series brushless DC gearmotor systems**, using the 60 W motor, 100:1 gearhead, and compatible driver. The catalog combination is identified by **BLMR460SHK-GFV / GFV4G100 / BLVD-KRD**. Its listed geared output torque is approximately **16 N·m**, above the preliminary **5.22 N·m** torque design target, and its controllable output speed covers our calculated screw-speed range.
+We selected **two Oriental Motor BLV R Series brushless DC gearmotor systems**, using the 60 W motor, 100:1 gearhead and compatible driver. The catalog combination is identified by **BLMR460SHK-GFV / GFV4G100 / BLVD-KRD**. Its listed geared output torque is approximately **16 N·m**, above the preliminary **5.22 N·m** torque design target and its controllable output speed covers our calculated screw-speed range.
 
-The selected package operates from a **24–48 V DC supply**. The supplier's speed–torque curve, rated current, drive efficiency, and exact package variant are important references for final equipment selection. Two independent motors also require synchronization to move the crosshead evenly; controls are outside the mechanical scope of this assignment.
+The selected package operates from a **24–48 V DC supply**. The supplier specifications, including the speed–torque curve, rated current, drive efficiency and exact package variant, should be retained in the final submission. Two independent motors also require synchronization to move the crosshead evenly; controls are outside the mechanical scope of this assignment.
 
 <img src="images/12.jpg" alt="Manufacturer's gearmotor drawing showing the mounting and shaft interface." style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
@@ -37,7 +39,7 @@ We downloaded the motor's STEP model and imported it into SolidWorks. We measure
 
 ### 1.3 Motor Mounting Interface Measurements
 
-The motor has a nominal **80 × 80 mm** flange, a **Ø15 mm keyed output shaft**, and **four Ø6.5 mm through mounting holes**. The hole pattern was measured at approximately **66.47 × 66.47 mm**.
+The motor has a nominal **80 × 80 mm** flange, a **Ø15 mm keyed output shaft** and **four Ø6.5 mm through mounting holes**. The hole pattern was measured at approximately **66.47 × 66.47 mm**.
 
 <img src="images/15.png" alt="Center-to-center spacing of the motor's mounting holes." style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
@@ -45,7 +47,7 @@ The motor has a nominal **80 × 80 mm** flange, a **Ø15 mm keyed output shaft**
 
 <img src="images/22.png" alt="Verification of the Ø15 mm keyed output shaft." style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
-The motor's locating boss is approximately **Ø33 mm**, and the output shaft is not centered within the square bolt-hole pattern. In particular, our measurements showed a **46.23 mm** vertical offset between the shaft axis and one row of mounting holes. This detail became important when mating the motor to the mounting plate.
+The motor's locating boss is approximately **Ø33 mm** and the output shaft is not centered within the square bolt-hole pattern. In particular, our measurements showed a **46.23 mm** vertical offset between the shaft axis and one row of mounting holes. This detail became important when mating the motor to the mounting plate.
 
 <img src="images/14.png" alt="Locating-boss measurement on the motor." style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
@@ -83,7 +85,7 @@ The corrected plate was extruded to **6 mm** thickness and successfully mated to
 
 ### 2.3 Bearing Stress and Minimum Thickness
 
-The bracket thickness was checked using a simplified bearing-stress model at the four motor mounting holes. We used the motor's **16 N·m** rated output torque, nominal **M6** fasteners, a conservative assumed **240 MPa** yield strength for the aluminum, and a safety factor of four.
+The bracket thickness was checked using a simplified bearing-stress model at the four motor mounting holes. We used the motor's **16 N·m** rated output torque, nominal **M6** fasteners, a conservative assumed **240 MPa** yield strength for the aluminum and a safety factor of four.
 
 The approximate bolt-group radius is **47.0 mm**. Under an equal-load-sharing approximation, the motor reaction torque produces an estimated **85.1 N** of tangential force at each bolt. Our resulting preliminary values were:
 
@@ -92,13 +94,13 @@ The approximate bolt-group radius is **47.0 mm**. Under an equal-load-sharing ap
 - **Selected thickness:** 6.0 mm
 - **Estimated bearing stress at 6 mm:** 2.36 MPa
 
-The free-body diagram, symbolic work, and numerical solution are shown in our handwritten notes.
+The free-body diagram, symbolic work and numerical solution are shown in our handwritten notes.
 
 <img src="images/2.png" alt="Mounting-bracket knowns, unknowns, free-body diagram, and symbolic analysis." style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
 <img src="images/3.png" alt="Mounting-bracket bearing-force and minimum-thickness calculations." style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
-The calculated local hole-bearing stress is below the assumed allowable stress. **This is a preliminary check**, not a full verification of plate bending, deflection, eccentric bolt loading, bolt preload, or the frame-side joint. The separate four-hole attachment pattern that secures the plate to the T-slot frame must be finalized alongside Jed's top-frame modifications.
+The calculated local hole-bearing stress is below the assumed allowable stress. **This is a preliminary check**, not a full verification of plate bending, deflection, eccentric bolt loading, bolt preload or the frame-side joint. The separate four-hole attachment pattern that secures the plate to the T-slot frame must be finalized alongside Jed's top-frame modifications.
 
 ## 3. Coupler Selection and Torsion Analysis — Abdu Mohamed Abdu
 
@@ -112,7 +114,7 @@ The two-piece design can be assembled around the shaft ends and provides access 
 
 ### 3.2 Torsional Shear and Thickness Check
 
-For a preliminary torsional analysis, we represented the coupler as an ideal hollow circular steel section. We assumed **AISI 1215 carbon steel**, a **230 MPa** representative yield strength, a **16 N·m** applied torque, and a factor of safety of four.
+For a preliminary torsional analysis, we represented the coupler as an ideal hollow circular steel section. We assumed **AISI 1215 carbon steel**, a **230 MPa** representative yield strength, a **16 N·m** applied torque and a factor of safety of four.
 
 The analysis produced:
 
@@ -129,7 +131,7 @@ The analysis produced:
 
 <img src="images/5.png" alt="Handwritten minimum coupler diameter, wall thickness, and torsional-stress check." style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
-The catalog rating exceeds the motor's rated torque by a factor of **12.5**. Our simplified annular calculation does **not** include the split line, keyways, clamp fasteners, shaft grip, or fatigue. These interface details must be checked separately during final integration.
+The catalog rating exceeds the motor's rated torque by a factor of **12.5**. Our simplified annular calculation does **not** include the split line, keyways, clamp fasteners, shaft grip or fatigue. These interface details must be checked separately during final integration.
 
 ## 4. Top Frame Connector Analysis — Abdu Mohamed Abdu
 
@@ -160,71 +162,71 @@ With a nominal **M8** bolt and a **6 mm** gusset bracket thickness, the simplifi
 
 <img src="images/8.png" alt="Handwritten resultant connector force and local bearing-stress comparison." style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
-Because the estimated stress is less than the allowable value, the connector is a reasonable **preliminary selection**. This check does not establish complete joint strength or stiffness: connector bending, T-nut engagement, slot pullout, fastener preload, and the actual moment lever arm still require verification. Jed's top-frame and vertical-frame FEA are documented in Sections 5 and 6.
+Because the estimated stress is less than the allowable value, the connector is a reasonable **preliminary selection**. This check does not establish complete joint strength or stiffness: connector bending, T-nut engagement, slot pullout, fastener preload and the actual moment lever arm still require verification. Jed's frame FEA will examine the revised top frame and upright members.
 
 ## 5. Top Crossmember FEA — Jed Miller
 
 ### 5.1 Model and Boundary Conditions
 
-The top crossmember was analyzed with the motors and lead-screw system represented in the finite element model. The applied loads and constraints used for this study are summarized below.
+Forces Applied:
 
-**Forces applied:**
+1 kN Axial Compression Force applied to the top of each motor.
 
-- **1 kN axial compression force** applied at each motor location.
-- **8 N·m moment** applied at each motor location.
+8 N-m moment applied at each motor.
 
-**FEA setup and mesh:**
+Setup:
 
 <img src="images/24.jpg" alt="Mesh and boundary conditions for the upper-frame finite element analysis" style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
-### 5.2 Stress, Displacement, and Safety Factor
+### 5.2 Stress, Displacement and Safety Factor
 
-**Von Mises stress:**
+Stress:
 
 <img src="images/25.jpg" alt="Top crossmember FEA von Mises stress result" style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
-**Displacement:**
+Displacement:
 
 <img src="images/26.png" alt="Top crossmember FEA resultant displacement result" style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
-**Factor of safety:**
+Safety Factor:
 
 <img src="images/27.png" alt="Top crossmember FEA factor-of-safety plot" style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
 ### 5.3 Frame Optimization
 
-Some modifications that can be made to the model would include reinforcement around the motor insertion points. These regions should be reconsidered when finalizing the motor mounting arrangement and interpreting the simulation results.
+Some modifications that can be made to the model would include some reinforcement around the motor insertion point.
 
 ## 6. Vertical Frame FEA — Jed Miller
 
 ### 6.1 Vertical Member Analysis
 
-The upright members were evaluated under combined axial and transverse loading to examine frame deformation and stresses.
+Forces Applied:
 
-**Forces applied:**
+2 kN Axial Compression Force applied to the center of the top of the frame.
 
-- **2 kN axial compression force** applied to the center of the top of the frame.
-- **2 kN transverse load** applied to the frame.
+2 kN Transverse load applied.
 
-**FEA setup:**
+Setup:
 
 <img src="images/28.jpg" alt="Vertical-frame finite element study boundary conditions and applied loads" style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
 ### 6.2 Results and Optimization
 
-**Von Mises stress:**
+Stress:
 
 <img src="images/29.png" alt="Vertical-frame von Mises stress result" style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
-**Deformation:**
+Deformation:
 
 <img src="images/30.png" alt="Vertical-frame resultant deformation plot" style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
-**Factor of safety:**
+Safety Factor:
 
 <img src="images/31.png" alt="Vertical-frame factor-of-safety plot" style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
-**Optimization:** Angled brackets can be added to the interior corners of the design to add strength and rigidity to the frame.
+Optimization:
+
+Angled brackets can be added to the interior corners of the design to add additional strength and rigidity to the design.
 
 ## 7. Floating Bearing Mount Design — Abdu Mohamed Abdu
 
@@ -232,9 +234,9 @@ The upright members were evaluated under combined axial and transverse loading t
 
 The lower floating supports help keep the two lead screws aligned while allowing them to **rotate** and accommodate limited **axial movement**. Each support limits lateral movement at the bottom of a lead screw without becoming the primary axial-load reaction point. A separate fixed/thrust-bearing arrangement is required to transfer the screw's main axial load into the frame.
 
-We selected a commercially available **Oilite AAM0812-12 bronze sleeve bushing** for each lead screw. The nominal bushing dimensions are **8 mm inside diameter, 12 mm outside diameter, and 12 mm length**. The material is self-lubricating sintered bronze impregnated with synthetic lubricant; in SolidWorks, ordinary bearing bronze was used only as an approximate material assignment.
+We selected a commercially available **Oilite AAM0812-12 bronze sleeve bushing** for each lead screw. The nominal bushing dimensions are **8 mm inside diameter, 12 mm outside diameter and 12 mm length**. The material is self-lubricating sintered bronze impregnated with synthetic lubricant; in SolidWorks ordinary bearing bronze was used only as an approximate material assignment.
 
-The manufacturer's drawing specifies a free bore of **8.010–8.030 mm**, an outside diameter of **12.030–12.050 mm**, and a length of **12.000 ± 0.127 mm**.
+The manufacturer's drawing specifies a free bore of **8.010–8.030 mm**, an outside diameter of **12.030–12.050 mm** and a length of **12.000 ± 0.127 mm**.
 
 <img src="images/23.png" alt="SolidWorks sketch and 12 mm extrusion of the bronze sleeve bushing." style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
@@ -250,19 +252,19 @@ The existing Acme screw has a nominal outside diameter of **12.7 mm**, which can
 
 <img src="images/17.png" alt="Bottom of the Acme lead screw with the reduced, smooth bearing journal." style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
-We inserted both floating-bearing subassemblies into the main SolidWorks tester assembly, aligned the bushings with the modified screw ends, and positioned the mounts on the existing lower T-slot crossmember. The earlier holes used for the lead screws in the lower frame were removed from the CAD model.
+We inserted both floating-bearing subassemblies into the main SolidWorks tester assembly, aligned the bushings with the modified screw ends and positioned the mounts on the existing lower T-slot crossmember. The earlier holes used for the lead screws in the lower frame were removed from the CAD model.
 
 <img src="images/13.png" alt="Two floating bearing mounts placed beneath the lead screws on the lower frame crossmember." style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
-### 7.4 Fit, Clearance, and Remaining Verification
+### 7.4 Fit, Clearance and Remaining Verification
 
 Our **Ø12.00 mm** pocket and the bushing's **12.030–12.050 mm** outside diameter produce a nominal interference before installation. However, pressing in a sintered bronze bushing can change its installed bore size. The selected journal's **Ø8 mm CAD dimension is nominal only**; the exact shaft tolerance and required **RC3 running fit** remain to be specified from the relevant fit table and checked after installation.
 
-Before fabrication, we would also verify that the journal does not bottom out in the blind housing, the Acme threads remain outside the bushing, and both mount bolt holes reach accessible T-slots. We intentionally kept this section simple and prioritized completing the functional assembly model.
+Before fabrication, we would also verify that the journal does not bottom out in the blind housing, the Acme threads remain outside the bushing and both mount bolt holes reach accessible T-slots. We intentionally kept this section simple and prioritized completing the functional assembly model.
 
 ## 8. Bill of Materials and Engineering Cost — Abdu and Jed
 
-This preliminary list records the A11 components selected or modeled. Some component quotes, machining costs, and fastener quantities still require confirmation. The assignment specifies **$35 per hour** for engineering labor.
+This preliminary list records the A11 components selected or modeled so far. Final prices, machining costs, quantities of fasteners and engineering labor will be completed after Jed integrates the frame changes and drawings. The assignment specifies **$35 per hour** for engineering labor.
 
 | Item | Qty. | Component / Specification | Cost Status |
 |---|---:|---|---|
@@ -274,9 +276,10 @@ This preliminary list records the A11 components selected or modeled. Some compo
 | 6 | 2 | Custom 6061-T6 floating mount, 60 × 40 × 20 mm | Estimate fabrication |
 | 7 | As needed | Frame mounting bolts, T-nuts, washers and other fasteners | Finalize during assembly |
 | 8 | As needed | Modified upper frame, supports, shaft ends and thrust-bearing hardware | Coordinate with Jed |
+
 | 9 | Actual hours | Engineering labor at $35/hour | Complete time record |
 
-**Engineering labor:** Abdu recorded **9 hours** and Jed recorded **8 hours**, for a combined **17 hours**. At **$35/hour**, the calculated engineering labor cost is **$595**, excluding materials and fabrication. The final purchased-part and manufacturing subtotal remains pending verified supplier and fabrication quotes.
+**Jed:** Add the completed A10 and A11 component totals, verified unit costs, machining estimate, shipping if applicable and total team labor. Ensure the final BOM matches the completed SolidWorks assembly.
 
 ## 9. Modeling and Assembly Integration
 
@@ -284,31 +287,25 @@ This preliminary list records the A11 components selected or modeled. Some compo
 
 The motor STEP model was imported into SolidWorks and attached to the custom mounting plate. Correcting the offset bolt-hole geometry was necessary to eliminate the initial mating conflict. The final component arrangement keeps the Ø15 mm motor shaft concentric with the central clearance opening.
 
-The motor-and-plate CAD model is shown in **Image 18** above.
-
 ### 9.2 Frame and Lower Bearing Subassemblies — Abdu
 
 The selected frame connectors and floating bearing supports were added to the A11 full assembly. Both lower bearing blocks are aligned under the two Acme lead screws. The frame-side fasteners and upper motor/coupler connections remain subject to the final team model.
 
-The completed lower-support arrangement is shown in **Image 13** above.
-
 ## 10. Drawings
 
-The following drawings document the motor mounting bracket, A10 crosshead, lower floating bearing mount, and overall tester assembly.
-
-### Motor Mount Bracket
+Motor Mount Bracket:
 
 <img src="images/32.png" alt="Motor mounting bracket engineering drawing" style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
-### Crosshead
+Cross Head:
 
 <img src="images/33.png" alt="Crosshead engineering drawing" style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
-### Floating Bearing Mount
+Floating Bearing Mount:
 
 <img src="images/34.png" alt="Lower floating bearing mount engineering drawing" style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
-### Full Assembly
+Full Assembly:
 
 <img src="images/35.png" alt="Final tensile tester assembly engineering drawing" style="display: block; width: 100%; max-width: 760px; height: auto; margin: 1rem auto 1.5rem;" />
 
@@ -320,7 +317,7 @@ This assignment demonstrated how important it is to verify dimensions from actua
 
 ### Jed Miller
 
-Challenges that occurred throughout the assignment included difficulty getting specific features downloaded from McMaster and Grainger to mesh and function appropriately in the study, as well as unfamiliarity with SolidWorks leading to over-constraining parts and making the assembly FEA difficult. Using online resources and consulting with industry professionals helped alleviate some of these issues.
+Challenges that occurred throughout the assignment included: difficulty getting specific features downloaded from McMaster and Grainger to appropriately mesh and function in the study, lack of familiarity with Solidworks software leading to over-constraining the parts, making the assembly FEA difficult. Utilization of online resources and consulting with industry professionals alleviated some of the issues.
 
 ## 12. CAD Files and Deliverables
 
@@ -334,8 +331,8 @@ The current A11 work establishes a motorized-drive concept and preliminary struc
 
 ### Time Spent
 
-**Actual time spent (Abdu):** 9 hours  
-**Actual time spent (Jed):** 8 hours  
+**Actual time spent (Abdu): 9 Hours**  
+**Actual time spent (Jed):8 Hours**
 
 ## Component References
 
